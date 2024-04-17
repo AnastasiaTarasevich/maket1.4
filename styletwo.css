@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    color: #000000;
+    margin: 0;
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Bold.woff') format('woff'),
+        url('TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Medium.woff') format('woff'),
+        url('TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Regular.woff') format('woff'),
+        url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.navigation{
+    width: 320px;
+    background-color: white;
+    height: 100vh;
+    box-shadow: 0px 0px 35px -5px rgb(112, 112, 112);
+
+}
+.navigation__head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    justify-content: space-between;
+}
+.container{
+    width: 69%;
+    padding-left: 16px;
+    margin-top: 32px;
+    position: relative;
+    height: 83vh;
+}
+.navigation__logo{
+    margin-right: auto;
+    padding-left: 16px;
+    
+}
+.navigation__button{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border: unset;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navigation__list{
+margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation__bottom__button{
+    display: flex;
+    margin-bottom: 13px;
+}
+.navigation__list.language{
+display: flex;
+
+}
+.navigation__link-language-inner,.navigation__link-language,abbr {
+    text-decoration: none;
+    color: black;
+}
+.navigation__link-language{
+    padding-right: 5px;
+}
+.navigation__button.down{
+    margin-right: 15px;
+    
+}
+.navigation__bottom{
+    bottom: 0;
+    position: absolute;
+}
+.navigation__link{
+    padding-bottom:1.7em ;
+    cursor: pointer;
+}
+.navigation__number a{
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 13px;
+    color: #000000;
+    text-decoration: none;
+}
+.navigation__number{
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+.navigation__link:last-child{
+    padding-bottom:0 ;
+}
+.navigation__link-email{
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s ease;
+}
+
+.navigation__list .navigation__link a:hover::before{
+        content: '';
+        display: block;
+        width: 2px;
+        height: 32px;
+        background-color: #41F6D7; 
+        position: absolute;
+        left: 0;
+        border-top-right-radius: 20px; 
+        border-bottom-right-radius: 20px; 
+        margin-top: -5px;
+}
+.navigation__list .navigation__link a{
+    transition: 0.3s ease;
+}
+.navigation__list .navigation__link a:hover{
+    color: #7E7E82;
+    transform: scaleX(10px);
+}
+.navigation__list .navigation__link a:active {
+    color: #f70000;
+    padding-left: 5px;
+}
+
+.navigation__list .navigation__link a:visited{ 
+    color: burlywood;
+    opacity: 0.6;
+}
+.navigation__button:hover{
+transform: scale(0.9);
+transition: 0.3s ease;
+
+}
+.navigation__button:active:focus{
+    background-color: #fd1259;
+}
+.navigation__list.language .navigation__link-language a:hover{
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+.navigation__list.language .navigation__link-language a abbr:active{
+    color: #FF3E79;
+    transition: 0.3s ease;
+}
+.navigation__list.language .navigation__link-language a abbr:visited{
+    color: #FF3E79;  
+}
+.navigation__link-email:hover{
+    padding-left: 5px;
+    transition: 0.3s ease;
+}
+.navigation__link-email:active{
+    color: #FF3E79;
+    transition: 0.3s ease;
+}
+
+.navigation__number a:hover{
+opacity: 0.8;
+    transition: 0.3s ease;
+}
+.navigation__number a:active{
+color: #FF3E79;
+    transition: 0.3s ease;
+}
+
